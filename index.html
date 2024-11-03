@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacecraft Survival Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <!-- Menu Button -->
+        <div id="menu-button">☰</div>
+        
+        <!-- Score and Speed Display -->
+        <div id="score-board">Score: <span id="score">0</span> | Speed: <span id="speed">2</span></div>
+        
+        <!-- Left-side Menu -->
+        <div id="menu">
+            <button id="resume-button">Resume</button>
+            <button id="try-again-button">Try Again</button>
+            <button id="mute-button">Mute</button>
+        </div>
+        
+        <!-- Game Over Popup -->
+        <div id="game-over">
+            <div id="game-over-content">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <button id="restart-button">Restart</button>
+            </div>
+        </div>
+        
+        <!-- Spacecraft -->
+        <div id="spacecraft"></div>
+    </div>
+    
+    <!-- Background Music -->
+    <audio id="background-music" src="background-music.mp3" loop></audio>
+    <!-- Collision Sound -->
+    <audio id="collision-sound" src="collision-sound.mp3"></audio>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
